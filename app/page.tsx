@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { use, useEffect, useRef, useState } from "react";
 import { GameManager } from "./Managers/GameManager";
+import Link from "next/link";
 
 export default function Home() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -41,6 +42,9 @@ export default function Home() {
         <button className=" px-3 py-1 bg-teal-300 text-white rounded-lg select-none" onClick={() => setStartGame(true)}>
           Start Game
         </button>
+        <Link href={'/Multiplayer'} className=" px-3 py-1 bg-teal-300 text-white rounded-lg select-none">
+          Multiplayer
+        </Link>
       </div>
     </main>
   );

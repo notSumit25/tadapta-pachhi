@@ -71,6 +71,7 @@ export class GameManager{
             obstacle.move(this.obstacleSpeed);
         });
         this.obstacles = this.obstacles.filter(obstacle => obstacle.x + obstacle.width > 0);
+        
     }
     
     addObstacle() {
@@ -138,6 +139,7 @@ export class GameManager{
         this.checkCollisions();
         this.checkScore();
         this.updateScore();
+        
         if(this.gameOver){
             this.updateGameOver();
         }
