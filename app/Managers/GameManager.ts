@@ -140,9 +140,10 @@ export class GameManager{
         this.updateScore();
         if(this.gameOver){
             this.updateGameOver();
-            this.resetGame();
         }
-        requestAnimationFrame(this.updateGame.bind(this));
+        if(!this.gameOver){
+            requestAnimationFrame(this.updateGame.bind(this));
+        }
     }
 
     startGame(){

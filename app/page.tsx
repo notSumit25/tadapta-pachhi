@@ -38,7 +38,7 @@ export default function Home() {
           width="800"
           height="600"
         ></canvas>
-        <button className="" onClick={() => setStartGame(true)}>
+        <button className=" px-3 py-1 bg-teal-300 text-white rounded-lg select-none" onClick={() => setStartGame(true)}>
           Start Game
         </button>
       </div>
